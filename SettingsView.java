@@ -28,8 +28,7 @@ public class SettingsView {
 	private UIPluginContext context;
 	private XLog log;
 	
-	private static double[] sLNfFrTB = {0.0D, 0.0D, 0.0D}; 
-        private static double fallFactor = 0.0D, relativeToBest = 0.0D, sigmaLogNoise = 0;
+	private static double[] sLNfFrTB = {0.0D, 0.0D, 0.0D};
 	
 	public SettingsView(UIPluginContext context, XLog log){
 		this.context = context;
