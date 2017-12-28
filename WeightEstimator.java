@@ -11,9 +11,9 @@ import java.io.IOException;
  * @author Utente
  */
 public class WeightEstimator {
-    public static boolean NORMALIZE_BY_ROW_MAX = false;
-    public static boolean NON_NEGATIVE_WEIGHTS = false;
-    public static boolean CLOSEST_OCCURRENCE_ONLY = false;
+    public static final boolean NORMALIZE_BY_ROW_MAX = false;
+    public static final boolean NON_NEGATIVE_WEIGHTS = false;
+    public static final boolean CLOSEST_OCCURRENCE_ONLY = false;
     public static final int STRATEGY__TASK_PAIRS = 0;
     public static final int STRATEGY__TASK_PAIRS_NORMALIZED_BY_COUNTS = 1;
     public static final int STRATEGY__PER_TRACE = 2;

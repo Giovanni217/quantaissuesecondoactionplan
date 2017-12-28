@@ -75,8 +75,8 @@ import org.xmlpull.v1.XmlPullParserFactory;
  * @author Utente
  */
 public class CNMining {
-    public static String attivita_iniziale = "_START_";
-    public static String attivita_finale = "_END_";
+    public static final String attivita_iniziale = "_START_";
+    public static final String attivita_finale = "_END_";
 
     public static long time  = 0;
 
@@ -2712,9 +2712,10 @@ public class CNMining {
         }
     }
 
-    public Graph getGrafoAggregato(Graph g, XLog log, boolean flag, ObjectIntOpenHashMap<String> mapOri, ObjectObjectOpenHashMap<String, ObjectArrayList<String>> attivita_tracceOri, ObjectObjectOpenHashMap<String, ObjectArrayList<String>> traccia_attivitaOri) {
+    public Graph getGrafoAggregato(Graph g, XLog log, boolean flag, ObjectIntOpenHashMap<String> mapOri, ObjectObjectOpenHashMap<String, ObjectArrayList<String>> attivita_tracceOri, ObjectObjectOpenHashMap<String, ObjectArrayList<String>> traccia_attivitaOri){
+        
         if (flag) {
-
+            
             time += System.currentTimeMillis();
 
             int count = 0;
